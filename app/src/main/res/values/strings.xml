@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UAS 180010296 1</string>
+    <string name="ganti_foto">Ganti Foto</string>
+    <string name="namaBarang">Nama Barang</string>
+    <string name="jumlah">Jumlah Barang</string>
+    <string name="save">Simpan</string>
+    <string name="add">Tambah Barang</string>
+    <string name="edit">Edit Barang</string>
+    <string name="delete">Hapus Barang</string>
+    <string name="jenis_mandi">Alat Mandi</string>
+    <string name="jenis_kebersihan">Alat Kebersihan</string>
+    <string name="jenis_perkakas">Perkakas</string>
+</resources>

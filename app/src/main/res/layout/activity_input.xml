@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/large_margin"
+    android:orientation="vertical"
+    tools:context=".InputActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/large_margin"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:id="@+id/edit_namaBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:autofillHints="@string/namaBarang"
+        android:ems="10"
+        android:hint="@string/namaBarang"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:autofillHints="@string/jumlah"
+        android:ems="10"
+        android:hint="@string/jumlah"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/rg_jebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/medium_margin"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/jebar_mandi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/jenis_mandi" />
+
+        <RadioButton
+            android:id="@+id/jebar_bersih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/jenis_kebersihan" />
+
+        <RadioButton
+            android:id="@+id/jebar_perkakas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/jenis_perkakas" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:text="@string/save" />
+
+
+</LinearLayout>
